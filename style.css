@@ -255,7 +255,7 @@ header {
     }
 }
 
-@media(max-width: 350px) {
+@media(max-width: 400px) {
     .jogo {
         transition: 1s;
         height: 60vh;
