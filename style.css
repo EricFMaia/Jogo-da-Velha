@@ -1,0 +1,284 @@
+:root {
+    --cor-primaria--: rgb(255, 255, 0);
+    --cor-branca--: rgb(243, 253, 255);
+    --cor-cinza-claro--: rgb(209, 225, 231);
+    --cor-jogador-x--: rgb(55, 217, 255);
+    --cor-jogador-o--: rgb(255, 83, 61);
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    color: var(--cor-cinza-claro--);
+}
+
+h1 {
+    font-size: 3.5em;
+    color: var(--cor-branca--);
+    text-shadow: 2px 2px 2px #313131;
+}
+
+h2 {
+    font-size: 2.8em;
+
+}
+.titulo-textoJogo{
+    color: var(--cor-jogador-x--);
+}
+.titulo-textoVelha{
+    color: var(--cor-jogador-o--);
+}
+
+body {
+    background-color: var(--cor-cinza-claro--);
+}
+
+
+header,
+.box-grobal,
+.jogo {
+    display: flex;
+    flex-direction: column;
+}
+
+.primeira-fileira,
+.segunda-fileira,
+.terceira-fileira {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+header {
+    height: 30vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-mostrar-qual-jogador-joga {
+
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.x,
+.o {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10;
+}
+
+.x {
+    color:var(--cor-jogador-x--) ;
+    outline: 2px solid var(--cor-jogador-x--);
+    border-radius: 15px;
+    
+}
+
+.o {
+    color:var(--cor-jogador-o--) ;
+    outline: 2px solid var(--cor-jogador-o--);
+    border-radius: 15px;
+}
+
+.placar {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--cor-branca--);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px rgb(67, 67, 67);
+
+}
+
+.placar-do-jogador-x {
+    color: var(--cor-jogador-x--);
+
+
+}
+
+.placar-do-jogador-o {
+    color: var(--cor-jogador-o--);
+
+
+}
+
+.box-grobal {
+    height: 70vh;
+    width: auto;
+
+    align-items: center;
+
+}
+
+.jogo {
+    height: 30vw;
+    width: 50vw;
+
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.primeira-fileira,
+.segunda-fileira,
+.terceira-fileira {
+    font-size: 3em;
+    gap: 10px;
+
+}
+
+.jogo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 80%;
+
+
+}
+
+
+.quadrado {
+    text-shadow: -2px -1.3px 1px rgb(81, 81, 81);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5em;
+
+    background-color: var(--cor-branca--);
+    border-radius: 15px;
+    box-shadow: 4px 4px 3px rgb(78, 78, 78);
+
+}
+
+.quadrado-certo {
+    transition: 1s;
+
+    background: rgb(100, 253, 166);
+}
+
+.mostrar-que-deu-empate {
+    transition: 1s;
+
+    background: rgb(255, 108, 108);
+}
+
+.mostrar-tuno-jogador-x {
+
+    transition:  0.8s;
+    border-radius: 15px;
+    color: var(--cor-cinza-claro--);
+    background-color: var(--cor-jogador-x--);
+    box-shadow: 4px 4px 3px rgb(78, 78, 78);
+    text-shadow: -2px -1.3px 1px rgb(81, 81, 81);
+
+}
+
+.mostrar-tuno-jogador-o {
+    transition: 0.8s;
+    border-radius: 15px;
+    color: var(--cor-cinza-claro--);
+    background-color: var(--cor-jogador-o--);
+    box-shadow: 5px 5px 3px rgb(67, 67, 67);
+    text-shadow: -2px -1.3px 1px rgb(81, 81, 81);
+}
+
+.efeitoAoPressionarTecla {
+    font-size: 1.6em;
+    color: var(--cor-branca--);
+    text-shadow: 0px 0px 1px rgb(177, 177, 177);
+}
+
+.efeitoAoPressionarTecla-quandoForApagada {
+    transition: 1s;
+    font-size: 1.5em;
+
+}
+
+@media(max-height: 600px) {
+    .jogo {
+        transition: 1s;
+        height: 60vh;
+        width: 80vw;
+
+    }
+}
+
+@media(max-height: 600px) {
+    .jogo {
+        transition: 1s;
+        height: 60vh;
+        width: 90vw;
+
+    }
+    
+}
+
+@media(max-width: 920px) {
+    .jogo {
+        transition: 1s;
+        height: 55vh;
+        width: 70vw;
+
+
+    }
+    .box-mostrar-qual-jogador-joga {
+
+        width: 70vw;
+       
+    
+    }
+    
+}
+
+@media(max-width: 600px) {
+    .jogo {
+        transition: 1s;
+        height: 60vh;
+        width: 100vw;
+
+
+
+
+    }
+    .box-mostrar-qual-jogador-joga {
+
+        width: 100vw;
+        
+    
+    }
+}
+
+@media(max-width: 300px) {
+    .jogo {
+        transition: 1s;
+        height: 60vh;
+        width: 100vw;
+
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .placar {
+        width: 60px;
+
+
+    }
+    .box-mostrar-qual-jogador-joga {
+
+        width: 100vw;
+        
+    }
+}
