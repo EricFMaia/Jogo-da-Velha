@@ -15,3 +15,6 @@ Jogadores: O jogo permite que dois jogadores alternem entre as jogadas, onde um 
 Verificação de Vencedor: O jogo verifica as condições de vitória, checando se algum jogador conseguiu alinhar três símbolos (horizontalmente, verticalmente ou diagonalmente). Caso não haja vencedor, o jogo verifica se houve empate.
 
 Interface Simples: A interface do jogo é simples e interativa, onde os jogadores clicam nas células do tabuleiro para fazer suas jogadas. O estado do jogo é atualizado após cada movimento
+
+Pagina do jogo https://ericfmaia.github.io/Jogo-da-Velha/
+
